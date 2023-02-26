@@ -31,6 +31,9 @@ class MainPage extends ConsumerWidget {
                   title: Text(user[index].username),
                   subtitle: Text(user[index].email),
                   leading: Text(user[index].id.toString()),
+                  children: [
+                    Text(user[index].password)
+                  ],
                 );
               },
             );
