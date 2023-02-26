@@ -3,7 +3,6 @@ import 'dart:convert';
 import '../model/user_model.dart';
 
 class ApiService {
-  late final Future<List<User>> _allUser;
   Future<List<User>> getUser() async {
     try {
       String baseUrl = 'https://fakestoreapi.com';
